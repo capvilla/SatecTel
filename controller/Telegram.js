@@ -14,7 +14,7 @@ function sendMessage(messageObj, messageText) {
 async function handleMessage(messageObj) {
     console.log(messageObj);
     
-    const messagetext = messageObj && messageObj.text ? messageObj.text : "";
+    const messageText = messageObj && messageObj.text ? messageObj.text : "";
 
 
 
