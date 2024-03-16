@@ -4,7 +4,7 @@ const _ = require('lodash');
 
 
 function sendMessage(messageObj, messageText) {
-    return axiosInstance.get("sendMessage", {
+    return axiosInstance.post("sendMessage", {
         chat_id: messageObj.chat.id,
         text: messageText
     })
