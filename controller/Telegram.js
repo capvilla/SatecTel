@@ -107,7 +107,7 @@ const extraerTarea = (message) => {
             prioridad
         }
     } else if (tarea === 'MODALIDAD') {
-        opcion = _.split(message, 'Modalidad:')[1].toUpperCase();
+        opcion = _.split(message, 'Modalidad:')[1]
 
         return {
             tarea,
