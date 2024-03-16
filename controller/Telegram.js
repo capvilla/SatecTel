@@ -25,7 +25,7 @@ async function handleMessage(messageObj) {
                 break;
 
             case "ayuda":
-                sendMessage(messageObj, "Formatos de mensajes:\n **Para Modalidad** \nMODALIDAD Expediente:[EXPEDIENTE] Modalidad:[MODALIDAD]\n\n Modalidades: PIC y APPLEX \n**Para Cope**\nCOPE Expediente:[EXPEDIENTE] Cope:[COPE]\n")
+                sendMessage(messageObj, "Formatos de mensajes:\n **Para Modalidad** \nMODALIDAD Expediente:[EXPEDIENTE] Modalidad:[MODALIDAD]\n\n Modalidades: PIC y APPLEX \n**Para Cope**\nCOPE Expediente:[EXPEDIENTE] Cope:[COPE]\n\n**Para Modalidad y Cope**\nAMBOS Expediente:[EXPEDIENTE] Ambos:[COPE],[MODALIDAD]\n\n**Para Zonificar**\nZONIFICAR Expediente:[EXPEDIENTE] Zonas:[ZONAS] Prioridad:[PRIORIDAD](Solamente en fijo)")
                 break;
 
             default:
