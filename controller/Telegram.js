@@ -13,7 +13,9 @@ function sendMessage(messageObj, messageText) {
 
 async function handleMessage(messageObj) {
     console.log(messageObj);
-    const messageText = const messagetext = messageobj && messageobj.text ? messageobj.text : "";
+    
+    const messagetext = messageobj && messageobj.text ? messageobj.text : "";
+
 
 
     if (messageText.charAt(0) === "/") {
