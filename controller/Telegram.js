@@ -4,7 +4,7 @@ const _ = require('lodash');
 
 
 function sendMessage(messageObj, messageText) {
-    return axiosInstance.post("sendMessage", {
+    return axiosInstance.get("sendMessage", {
         chat_id: messageObj.chat.id,
         text: messageText
     })
@@ -13,7 +13,7 @@ function sendMessage(messageObj, messageText) {
 
 async function handleMessage(messageObj) {
     console.log(messageObj);
-    const messageText = messageObj.text || "";
+    const messageText = const messagetext = messageobj && messageobj.text ? messageobj.text : "";
 
 
     if (messageText.charAt(0) === "/") {
